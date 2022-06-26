@@ -2,22 +2,32 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Hai Dep Dep</title>
+  <title>Love Dep Dep</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 <style>
-.ml2 {
+.ml6 {
+  position: relative;
   font-weight: 900;
-  font-size: 3.5em;
+  font-size: 3.3em;
 }
 
-.ml2 .letter {
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
   display: inline-block;
   line-height: 1em;
 }
 body {
-  background-color: #e74c3c;
+  background-color: #f5f5f5;
 }
 </style>
 
@@ -26,7 +36,12 @@ body {
       <br><br><br><br>
       <br><br><br><br>
       <br><br><br><br>
-  <h1 class="ml2" style="color: #f5f5f5;">Hai Selamat Siang Dep Dep</h1>
+
+  <h1 class="ml6" style="color: #e74c3c;">
+      <span class="text-wrapper">
+        <span class="letters">Jaga Kesehatan Kamu Ya Dep </span>
+      </span>
+    </h1>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script></div>
 </center>
@@ -34,29 +49,27 @@ body {
 
 <script>
     function myFunction() {
-      location.replace("index2.html")
+      location.replace("index3.html")
     }
     </script>
 
 <script>
-  var textWrapper = document.querySelector('.ml2');
+  var textWrapper = document.querySelector('.ml6 .letters');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
 anime.timeline({loop: false})
   .add({
-    targets: '.ml2 .letter',
-    scale: [4,1],
-    opacity: [0,1],
+    targets: '.ml6 .letter',
+    translateY: ["1.1em", 0],
     translateZ: 0,
-    easing: "easeOutExpo",
-    duration: 950,
-    delay: (el, i) => 70*i
+    duration: 750,
+    delay: (el, i) => 50 * i
   }).add({
-    targets: '.ml2',
+    targets: '.ml6',
     opacity: 0,
     duration: 1000,
     easing: "easeOutExpo",
-    delay: 10000000000
+    delay: 100000000000000
   });
 </script>
 

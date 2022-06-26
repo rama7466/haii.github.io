@@ -1,5 +1,8 @@
-# scriptNembakBetina
-Hii  gua ngebuat script beginian lantaran gabut dan juga sekalian mo nembak gebetan gitu, lah tahu dah 
-diterima apa nggak urusan nanti , yang penting yakin owkwowkwkwkww 
+# nembakbetina
+Ini Script Html Buat Nembak Betina :v
 
+live demo nya ada di http://wafarifki.rf.gd/wapadepi
 
+ini project lagi gua convert ke mobile version...stay aja gan di project gua ini :D
+
+klik dimana aja buat pindah halaman :D
